@@ -80,12 +80,14 @@ Specifically a "runtime" error, one not caught by the debugger and only now seen
 `Mean` didn't work because it takes 1 argument, such as `Mean(value list)`, but what we actually gave it was `Mean(value, another, and another, and another value)`, which doesn't work. So what we have to do is put the list in a list. 
 
 In short, put those values in another group of parentheses. 
+
 <img src="https://cdn.discordapp.com/attachments/872160747306754058/1024191869208510514/unknown.png" alt="runtime error" width="400"/>
 
 Wham! Let's try again.
 
 Voila! We get a graph this time. But no line of best fit?
 Alas, an error persists.
+
 <img src="https://cdn.discordapp.com/attachments/872160747306754058/1024198586252144660/unknown.png" alt="runtime error" width="400"/>
 
 This one is tricker, and took a couple minutes to re-read the documentation for `matplotlib.pyplot`, until I found it needs a /specific/ type of array. `np.array()` is what we're looking for. Put that around our x, which is Theta, which is our theta array. You'll have this
