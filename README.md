@@ -1,4 +1,4 @@
-# Proj-Motion-Land
+# Proj-Motion and Code Dissection
 
 Documenting how to modify the code for project members. None of this is imporant for the grading to feel free to ignore this.
 
